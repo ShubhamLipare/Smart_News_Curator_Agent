@@ -1,0 +1,9 @@
+Let me know if you want:
+
+➕ Add memory or feedback mechanism
+
+🧑‍💻 Turn this into a Streamlit or FastAPI app
+
+📤 Email/Slack delivery
+
+📚 Add a vector store to make it queryable

@@ -1,0 +1,13 @@
+langchain
+langgraph
+langsmith
+langchain_groq
+requests
+python-dotenv
+fastapi
+uvicorn
+streamlit
+transformers
+newspaper3k
+lxml[html_clean]
+ipykernel 
