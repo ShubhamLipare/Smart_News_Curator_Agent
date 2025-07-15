@@ -23,6 +23,10 @@ if st.button("🔍 Summarize"):
             st.subheader("📝 Evaluation")
             st.markdown(output["evaluation"])
 
+            st.subheader("Urls")
+            for i,url in enumerate(output["url"]):
+                st.markdown(f"{i+1}-{url}")
+
             st.subheader("📝 Iterations")
             st.markdown(output["iteration"])
         else:

@@ -14,5 +14,6 @@ def fetch_date(request:Input):
     return {
         "final_summary": result["final_summary"],
         "evaluation": result["evaluation"],
+        "url": result["url"],
         "iteration":result["iteration"]
     }

@@ -1,45 +1,45 @@
 {
   "status": "ok",
-  "totalResults": 465,
+  "totalResults": 9232,
   "articles": [
     {
       "source": {
         "id": null,
-        "name": "Nakedcapitalism.com"
+        "name": "New York Post"
       },
-      "author": "Haig Hovaness",
-      "title": "Links 7/13/2025",
-      "description": "Our strategic daily links: Olympic leaps, how hot can it get, Chinese chargers, EU growing, Gaza horrors, Ukraine burning, vanishing privacy, Trumpishness, Musk world, doomed Democrats, immigration troubles, Mr. market, AI, and wretched excess",
-      "url": "https://www.nakedcapitalism.com/2025/07/links-7-13-2025.html",
-      "urlToImage": "https://www.nakedcapitalism.com/wp-content/uploads/2025/07/Quokkas-e1752327494173.jpg",
-      "publishedAt": "2025-07-13T10:55:12Z",
-      "content": "Making history for his country &amp; proving that patience is key \r\nIt took Artur Davtyan three Olympic Games to win Armenias first Olympic medal in artistic @gymnastics, and at his fourth, in #Paris\u2026 [+8036 chars]"
+      "author": "Taylor Herzlich",
+      "title": "Bitcoin surges to record high above $120K ahead of \u2018Crypto Week\u2019",
+      "description": "The cryptocurrency traded at $121,673.10 at 9:35 a.m. ET, after earlier in the session breaking past $122,000.",
+      "url": "https://nypost.com/2025/07/14/business/bitcoin-surges-to-record-high-above-120k-ahead-of-crypto-week/",
+      "urlToImage": "https://nypost.com/wp-content/uploads/sites/2/2025/07/newspress-collage-cqokb5g5c-1752499815440.jpg?quality=75&strip=all&1752485430&w=1024",
+      "publishedAt": "2025-07-14T14:14:37Z",
+      "content": "Bitcoin surged to a record high above $120,000 on Monday as institutional investors and corporations fueled a rally in the coins ETFs.\r\nThe cryptocurrency traded at $121,673.10 at 9:35 a.m. ET, after\u2026 [+2247 chars]"
     },
     {
       "source": {
         "id": null,
-        "name": "Futurism"
+        "name": "Biztoc.com"
       },
-      "author": "Frank Landymore",
-      "title": "Newest Version of Grok Looks Up What Elon Musk Thinks Before Giving an Answer",
-      "description": "This week, Elon Musk unveiled Grok 4 \u2014 \"the world's most powerful AI assistant.\" The same week, the older version of Grok repeatedly attacked Jewish people and declared itself \"MechaHitler.\" It also spoke in the first person as if it were Musk himself when a \u2026",
-      "url": "https://futurism.com/grok-looks-up-what-elon-musk-thinks",
-      "urlToImage": "https://wordpress-assets.futurism.com/2025/07/grok-looks-up-what-elon-musk-thinks.jpg",
-      "publishedAt": "2025-07-13T10:45:38Z",
-      "content": "This week, Elon Musk unveiled Grok 4,\u00a0which he called \"the world's most powerful AI assistant.\" The optics were appalling; the same week, the older version of Grok repeatedly attacked Black and Jewis\u2026 [+4018 chars]"
+      "author": "youtube.com",
+      "title": "Bitcoin soars to new highs, surpasses $120,000",
+      "description": "Anthony Pompliano, founder and CEO of Professional Capital Management, joins 'Squawk Box' to discuss Bitcoin as the ...",
+      "url": "https://biztoc.com/x/041d870792759e33",
+      "urlToImage": "https://biztoc.com/cdn/041d870792759e33_s.webp",
+      "publishedAt": "2025-07-14T14:14:04Z",
+      "content": "Anthony Pompliano, founder and CEO of Professional Capital Management, joins 'Squawk Box' to discuss Bitcoin as the ...\r\nThis story appeared on youtube.com, 2025-07-14 14:00:54."
     },
     {
       "source": {
         "id": null,
-        "name": "Geeky Gadgets"
+        "name": "Biztoc.com"
       },
-      "author": "Julian Horsey",
-      "title": "xAl Grok 4 : Elon Musk\u2019s Latest AI Model Demonstrated",
-      "description": "What if the future of artificial intelligence wasn\u2019t just about solving problems but fundamentally reshaping how we think, create, and interact? Enter Grok 4, the latest breakthrough from XAI, a system so advanced it blurs the line between human ingenuity and\u2026",
-      "url": "https://www.geeky-gadgets.com/xal-grok-4-elon-musk/",
-      "urlToImage": "https://www.geeky-gadgets.com/wp-content/uploads/2025/07/grok-4-ai-revolution-innovation_optimized.jpg",
-      "publishedAt": "2025-07-13T10:01:01Z",
-      "content": "What if the future of artificial intelligence wasnt just about solving problems but fundamentally reshaping how we think, create, and interact? Enter Grok 4, the latest breakthrough from XAI, a syste\u2026 [+8693 chars]"
+      "author": "bloomberg.com",
+      "title": "Russia Faces Labor Shortage of 11 Million by 2030, Minister Says",
+      "description": "",
+      "url": "https://biztoc.com/x/05a24a64aaf8f2f1",
+      "urlToImage": "https://biztoc.com/cdn/05a24a64aaf8f2f1_s.webp",
+      "publishedAt": "2025-07-14T14:13:52Z",
+      "content": "{ window.open(this.href, '_blank'); }, 200); return false;\"&gt;Why did Trump raise 30% tariffs on EU and Mexico? { window.open(this.href, '_blank'); }, 200); return false;\"&gt;How will new US tariffs\u2026 [+749 chars]"
     }
   ]
 }

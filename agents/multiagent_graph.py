@@ -10,6 +10,7 @@ class MultiAgentState(TypedDict):
     query: str
     articles: List[dict]
     summaries: List[Summary]
+    url: List[str]
     current_summary: str
     evaluation: str
     final_summary: str
@@ -30,25 +31,29 @@ def build_multiagent():
         curator_state = curator_graph.invoke({
             "query": state["query"],
             "articles": [],
-            "summaries": []
+            "summaries": [],
+            "url": []
         })
         summaries = curator_state["summaries"]
         state["summaries"] = summaries
-        #state["current_summary"] = summaries[0].summary 
-        state["current_summary"] = next(
-            (s.summary for s in summaries ), #if "bitcoin" in s.summary.lower()
-            summaries[0].summary  # fallback
-            )
+        state["url"]=curator_state["url"]
+        state["current_summary"] = summaries[0].summary 
+        #state["current_summary"] = next(
+        #    (s.summary for s in summaries ),
+        #    summaries[0].summary  # fallback
+        #    )
+    
         return state
 
     @traceable(name="critic_runner")
     def run_critic(state: MultiAgentState) -> MultiAgentState:
         print("\n[Critic Agent] Evaluating and refining summary...")
         critic_state = critic_graph.invoke({
-            "current_summary": state["current_summary"],
-            "evaluation": "",
-            "final_summary": ""
-        })
+                "current_summary":state["current_summary"],
+                "evaluation": "",
+                "final_summary": ""
+            })
+ 
         state["evaluation"] = critic_state["evaluation"]
         state["final_summary"] = critic_state["final_summary"]
         state["iteration"] += 1
@@ -82,22 +87,3 @@ def build_multiagent():
     graph.add_edge("curator", "critic")
 
     return graph.compile()
-
-"""
-if __name__ == "__main__":
-    agent = build_multiagent()
-    result = agent.invoke({
-        "query": "Business",
-        "articles": [],
-        "summaries": [],
-        "current_summary": "",
-        "evaluation": "",
-        "final_summary": "",
-        "iteration": 0,
-        "max_iterations": 3
-    })
-
-    print("\n🧠 Final Summary:\n", result["final_summary"])
-    print("\n📝 Evaluation:\n", result["evaluation"])
-    print("\n📝 Evaluation:\n", result["iteration"])
-"""

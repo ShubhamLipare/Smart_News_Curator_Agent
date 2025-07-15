@@ -12,6 +12,7 @@ class AgentState(TypedDict):
     query: str
     articles: List[dict]
     summaries: List[Summary]
+    url:List[str]
 
 def build_agent():
     graph = StateGraph(AgentState)
@@ -24,8 +25,8 @@ def build_agent():
     def summarise_all(state: AgentState) -> AgentState:
         summaries = []
         for article in state["articles"]:
-            content = article.get("description","")
-            print(content)
+            content = article.get("content","")
+            state["url"].append(article["url"])
             text = summarise_article(article["title"], content=content)
             #category = classify_topic(text)["labels"][0] ##commenting both these for low latency
             #entities = [e["word"] for e in extract_entities(text)]  
@@ -35,6 +36,12 @@ def build_agent():
                 #category=category,
                 #entities=entities
             ))
+
+        #for validatoin
+        with open("validation/summaries.txt", "w") as f:
+            for summary in summaries:
+                f.write(f"{summary}\n")
+                
         state["summaries"] = summaries
         return state
 
@@ -45,18 +52,3 @@ def build_agent():
     graph.add_edge("summary", END)
 
     return graph.compile()
-
-"""
-if __name__ == "__main__":
-    query = "Artificial Intelligence"
-    agent = build_agent()
-    from langsmith import traceable
-    @traceable(name="curator agent")
-    def run():
-        return agent.invoke({"query": query, "articles": [], "summaries": []})
-
-    final_state=run()
-    for i, summary in enumerate(final_state["summaries"], 1):
-        print(f"\n--- Article {i} ---")
-        print(summary.model_dump())
-"""

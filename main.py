@@ -7,6 +7,7 @@ def run_pipeline(query:str,max_iterations:int)->dict:
         "query": query,
         "articles": [],
         "summaries": [],
+        "url": [],
         "current_summary": "",
         "evaluation": "",
         "final_summary": "",

@@ -23,7 +23,6 @@ def critic_summary(summary: str) -> dict:
     evaluation = "No evaluation"
     revised = summary
 
-    # Updated regex
     eval_match = re.search(r"(?i)evaluation\s*:\s*(.*?)(?:\n|$)", text, re.DOTALL)
     revised_match = re.search(r"(?i)revised summary.*?:\s*(.*)", text, re.DOTALL)
 
@@ -56,22 +55,3 @@ def build_agent():
 
    return graph.compile()
 
-'''
-if __name__=="__main__":
-   
-    summary = """
-        1. AI is getting popular everywhere.
-        2. Many companies are using AI.
-        3. This shows how AI is useful in the future.
-    """
-    workflow=build_agent()
-    result=workflow.invoke({
-    "current_summary":summary, 
-    "evaluation": "",
-    "final_summary": ""})
-    print("----------------------------------")
-    print(result["evaluation"])
-    print("---------------------------------")
-    print(result["final_summary"])
-
-'''
